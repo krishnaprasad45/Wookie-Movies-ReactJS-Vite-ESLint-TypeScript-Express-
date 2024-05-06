@@ -1,0 +1,183 @@
+/* CSS Class for movie list */
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* CSS Class for genre section */
+  .genre-section {
+    margin-bottom: 20px;
+  }
+  
+  /* CSS Class for genre title */
+  .genre-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* CSS Class for movies row */
+  .movies-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto; 
+    padding: 10px 0; 
+  }
+  
+  /* CSS Class for movie card */
+  .movie-card {
+    width: 300px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* CSS Class for movie poster */
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* CSS Class for movie details */
+  .movie-details {
+    padding: 15px;
+  }
+  
+  /* CSS Class for movie title */
+  .movie-title {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* CSS Class for movie rating */
+  .movie-rating {
+    color: #666;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* CSS Class for movie length */
+  .movie-length {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* CSS Class for movie overview */
+  .movie-overview {
+    color: #777;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* CSS Class for movie overview */
+
+  
+  /* CSS Class for movie card */
+.movie-card {
+    width: 300px;
+    margin: 10px;
+    background-color: #1c1c1c; 
+    border: 1px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+  }
+  
+  /* Additional animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .movie-card {
+    animation: fadeIn 0.5s ease-out; 
+  }
+  
+  /* CSS Class for movie title */
+  .movie-title {
+    font-size: 24px; 
+    color: #fff; 
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  /* CSS Class for movie rating */
+  .movie-rating {
+    color: #ccc; 
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* CSS Class for movie length */
+  .movie-length {
+    color: #ccc;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* CSS Class for movie overview */
+  .movie-overview {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* CSS for movie rating */
+.movie-rating {
+    color: #ccc; 
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+}
+
+/* CSS for star icons */
+.star-icon {
+    color: gold;
+}
+
+/* CSS for movie overview */
+.movie-overview {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Verdana', sans-serif; 
+}

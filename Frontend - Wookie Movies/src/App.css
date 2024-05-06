@@ -1,0 +1,9 @@
+.app-container {
+    overflow-x: hidden; /* Hide horizontal overflow to prevent page scrolling */
+  }
+  
+  .scrollable-content {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 20px; 
+  }
+  
