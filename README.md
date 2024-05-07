@@ -1,4 +1,4 @@
-# <span style="color:#007bff;">Moving Listing App 🌟</span>
+# <span style="color:#007bff;">Movie Listing App 🌟</span>
 
 ## <span style="color:#28a745;">Description</span>
 This project is a Movie Listing App built using ReactJS, TypeScript, Vite, ESLint, Express, Node, and MongoDB. It aims to provide users with a platform to browse and search for moving services conveniently. The app incorporates features such as category organization, API bearer authentication, state management, and search by filtering.
