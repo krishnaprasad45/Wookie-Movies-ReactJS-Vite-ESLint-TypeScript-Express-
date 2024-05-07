@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
   }
   
   /* CSS Class for genre section */
@@ -41,6 +42,7 @@
   
   .movie-card:hover {
     transform: translateY(-5px);
+    z-index: 0;
   }
   
   /* CSS Class for movie poster */
@@ -89,8 +91,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  /* CSS Class for movie overview */
-
   
   /* CSS Class for movie card */
 .movie-card {
@@ -107,6 +107,8 @@
   .movie-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+
   }
   
   /* Additional animation */
@@ -181,3 +183,59 @@
     text-align: justify;
     font-family: 'Verdana', sans-serif; 
 }
+
+
+
+/* TO MAKE RESPONSIVE
+
+/* For smaller screens */
+@media only screen and (max-width: 600px) {
+  .movie-list {
+    margin-top: 20px;
+  }
+
+  .movies-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .movie-card {
+    width: 250px;
+  }
+
+  .movie-title {
+    font-size: 20px;
+  }
+
+  .movie-rating,
+  .movie-length,
+  .movie-overview {
+    font-size: 14px;
+  }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .movie-list {
+    margin-top: 25px;
+  }
+
+  .movies-row {
+    justify-content: space-between;
+  }
+
+  .movie-card {
+    width: 275px;
+  }
+
+  .movie-title {
+    font-size: 22px;
+  }
+
+  .movie-rating,
+  .movie-length,
+  .movie-overview {
+    font-size: 15px;
+  }
+}
+

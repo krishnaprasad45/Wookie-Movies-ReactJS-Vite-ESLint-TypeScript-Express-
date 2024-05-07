@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import "./RowPost.css";
 import { apiAxios } from "../../Constraints/axiosInterceptor";
 import { Movie } from "../../Interface/movieInterface";
+import Navbar from "../Navbar/Navbar";
+
 
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function RowPost() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const moviesByGenre: { [key: string]: Movie[] } = {};
-
   const [searchTerm, setSearchTerm] = useState("");
 
   // Filter movies based on search query
@@ -21,7 +22,7 @@ function RowPost() {
       setMovies(response.data);
     });
   }, []);
-  console.log("f", filteredMovies);
+
   movies.forEach((movie) => {
     movie.genres.forEach((genre: string | number) => {
       if (!moviesByGenre[genre]) {
@@ -31,20 +32,10 @@ function RowPost() {
     });
   });
 
-
   return (
     <>
-      <div className="flex">
-        <input
-          type="search"
-          placeholder="Search Users"
-          className="border rounded-l py-2 px-4"
-          name=""
-          id=""
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />{" "}
+      {/* Passing props to the Navbar component */}
       <div className="movie-list">
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="genre-section">
